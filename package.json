@@ -1,0 +1,24 @@
+{
+  "name": "stream-iterate",
+  "version": "0.0.0",
+  "description": "Iterate through the values of a stream",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "from2": "^1.3.0",
+    "tape": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/stream-iterate.git"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/stream-iterate/issues"
+  },
+  "homepage": "https://github.com/mafintosh/stream-iterate"
+}
