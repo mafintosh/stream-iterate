@@ -1,6 +1,6 @@
 {
   "name": "stream-iterate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Iterate through the values of a stream",
   "main": "index.js",
   "dependencies": {},
