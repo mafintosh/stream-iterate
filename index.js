@@ -1,4 +1,13 @@
+var Readable = require('stream').Readable
+
+var stream2 = function (stream) {
+  if (stream._readableState) return stream
+  return new Readable({objectMode: true, highWaterMark: 16}).wrap(stream)
+}
+
 module.exports = function (stream) {
+  stream = stream2(stream)
+
   var ended = false
   var data = null
   var err = null
