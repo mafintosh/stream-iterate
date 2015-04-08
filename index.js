@@ -6,9 +6,9 @@ module.exports = function (stream) {
   var fn = null
 
   var consume = function (e) {
-    if (e && stream.destroy) {
+    if (e) {
       destroyed = true
-      stream.destroy(e)
+      if (stream.destroy) stream.destroy(e)
       return
     }
 
