@@ -6,6 +6,8 @@ Iterate through the values in a stream.
 npm install stream-iterate
 ```
 
+[![build status](http://img.shields.io/travis/mafintosh/stream-iterate.svg?style=flat)](http://travis-ci.org/mafintosh/stream-iterate)
+
 ## Usage
 
 ``` js
