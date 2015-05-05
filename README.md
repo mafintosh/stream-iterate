@@ -20,10 +20,12 @@ var read = iterate(stream)
 
 loop()
 
+// recursively iterates through each item in the stream
 function loop () {
   read(function (err, data, next) {
     console.log(err, data)
     next()
+    loop()
   })
 }
 ```
