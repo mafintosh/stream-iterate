@@ -18,10 +18,14 @@ var stream = from.obj(['a', 'b', 'c'])
 
 var read = iterate(stream)
 
-read(function (err, data, next) {
-  console.log(err, data)
-  next()
-})
+loop()
+
+function loop () {
+  read(function (err, data, next) {
+    console.log(err, data)
+    next()
+  })
+}
 ```
 
 If you don't call `next` and call `read` again the same `(err, value)` pair will be returned.
