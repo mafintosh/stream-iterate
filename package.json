@@ -4,7 +4,7 @@
   "description": "Iterate through the values of a stream",
   "main": "index.js",
   "dependencies": {
-    "readable-stream": "^2.1.5",
+    "readable-stream": "^3.0.2",
     "stream-shift": "^1.0.0"
   },
   "devDependencies": {
